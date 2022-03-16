@@ -1,0 +1,8 @@
+# commit related
+alias ga="git number add"
+alias gcm="git commit -m"
+
+# diff/status
+alias gdi="git number diff"
+alias gds="git number diff --staged"
+alias gst="git number"
