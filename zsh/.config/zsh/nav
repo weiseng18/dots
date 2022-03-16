@@ -2,6 +2,7 @@
 
 typeset -A local nav=(
   [d]="$DOTS"
+  [s]="$REPOS/uni/Y1S2"
   [z]="$DOTS/zsh/.config/zsh"
 )
 
