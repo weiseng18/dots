@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+local stow_folders=(zsh)
+
+for folder in ${stow_folders}; do
+  stow --restow \
+    --target $HOME $folder
+done

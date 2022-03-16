@@ -1,0 +1,4 @@
+# basic
+alias c="clear"
+alias ll="ls -la"
+alias o="cd .."
