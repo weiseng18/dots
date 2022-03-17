@@ -3,6 +3,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'lervag/vimtex'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
@@ -34,6 +36,22 @@ set colorcolumn=80
 
 colorscheme PaperColor
 set background=light
+
+" ------------------------------------------------------------------ vim_vimtex
+
+let g:vimtex_view_method = 'skim'
+
+" --------------------------------------------------------------- vim_ultisnips
+
+" to allow ultisnips triggers to function properly
+" map! <C-h> <Nop>
+
+let g:UltiSnipsSnippetsDir = '$DOTS/nvim/.config/nvim/ultisnips'
+
+let g:UltiSnipsExpandTrigger       = '<Tab>'
+let g:UltiSnipsJumpForwardTrigger  = '<C-l>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-h>'
+let g:UltiSnipsEditSplit           = 'vertical'
 
 " ------------------------------------------------------------------ vim_remaps
 
