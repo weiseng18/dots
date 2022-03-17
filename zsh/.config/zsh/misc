@@ -1,6 +1,6 @@
 # basic
 alias c="clear"
-alias ll="ls -la"
+alias l="ls -la"
 alias o="cd .."
 
 alias n="nvim"
