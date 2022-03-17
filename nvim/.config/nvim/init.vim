@@ -31,6 +31,7 @@ set relativenumber
 set autochdir
 set termguicolors
 set colorcolumn=80 
+set scrolloff=8
 
 " ------------------------------------------------------------------ vim_colors
 
@@ -40,6 +41,10 @@ set background=light
 " ------------------------------------------------------------------ vim_vimtex
 
 let g:vimtex_view_method = 'skim'
+
+let g:vimtex_quickfix_ignore_filters = [
+    \ 'badness 10000',
+    \]
 
 " --------------------------------------------------------------- vim_ultisnips
 
