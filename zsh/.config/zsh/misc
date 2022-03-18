@@ -4,3 +4,6 @@ alias l="ls -la"
 alias o="cd .."
 
 alias n="nvim"
+
+# copy pwd to clipboard
+alias cpwd="pbcopy <<< $(pwd)"
