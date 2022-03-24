@@ -44,6 +44,7 @@ let g:vimtex_view_method = 'skim'
 
 let g:vimtex_quickfix_ignore_filters = [
     \ 'badness 10000',
+    \ 'Snakes have been superseded by decorations',
     \]
 
 " --------------------------------------------------------------- vim_ultisnips
