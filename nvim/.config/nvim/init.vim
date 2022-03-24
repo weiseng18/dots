@@ -13,6 +13,8 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
 
+Plug 'junegunn/goyo.vim'
+
 call plug#end()
 
 " -------------------------------------------------------------------- vim_sets
