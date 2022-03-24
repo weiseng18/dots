@@ -7,3 +7,7 @@ alias n="nvim"
 
 # copy pwd to clipboard
 alias cpwd="pbcopy <<< $(pwd)"
+
+# setup java
+export JAVA_HOME="/usr/bin/java"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
