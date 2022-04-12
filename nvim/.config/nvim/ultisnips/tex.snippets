@@ -16,10 +16,36 @@ snippet s2s "subsection star" w
 \subsection*{$1}$0
 endsnippet
 
+snippet p "paragraph" w
+\paragraph{$1}$0
+endsnippet
+
 snippet bals "begin align star" w
 \begin{align*}
 	$1
 \end{align*}$0
+endsnippet
+
+snippet beql "begin equation label" w
+\begin{equation}\label{$1}
+	$2
+\end{equation}$0
+endsnippet
+
+snippet tb "table" w
+\begin{center}
+	\begin{tabular}{ |c|c|c| }
+		\hline
+		$1
+		\hline
+	\end{tabular}
+\end{center}
+endsnippet
+
+# cheatsheet
+
+snippet ssu "section star underline" w
+\section*{\underline{$1}}$0
 endsnippet
 
 # math
