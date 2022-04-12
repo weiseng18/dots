@@ -47,6 +47,7 @@ set autochdir
 set termguicolors
 set colorcolumn=80 
 set scrolloff=8
+set foldmethod=indent
 
 " ------------------------------------------------------------------ vim_colors
 
