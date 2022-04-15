@@ -6,7 +6,7 @@ alias o="cd .."
 alias n="nvim"
 
 # copy pwd to clipboard
-alias cpwd="pbcopy <<< $(pwd)"
+alias cpwd="pwd | pbcopy"
 
 # pdfgrep
 alias pg="pdfgrep -rin"
