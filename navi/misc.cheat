@@ -1,0 +1,4 @@
+% misc
+
+# Check if a LaTeX package is installed
+kpsewhich <package-name>.sty
