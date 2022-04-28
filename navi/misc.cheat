@@ -2,3 +2,6 @@
 
 # Check if a LaTeX package is installed
 kpsewhich <package-name>.sty
+
+# Install LaTeX package
+sudo tlmgr install <package-name>
