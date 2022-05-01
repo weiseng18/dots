@@ -5,5 +5,5 @@ ffmpeg -i <input-file> -r 1 -probesize 20M -threads 1 -vcodec libx264 -b:v 128k 
 
 $ input-file: ls
 
-# Record MacBook screen (without audio) at 6FPS, while external monitor is disconnected
-ffmpeg -f avfoundation -i "1:" -r 6 <output-file>
+# Record MacBook screen (without audio) at 6FPS 720p, while external monitor is disconnected
+ffmpeg -f avfoundation -i "1:" -r 6 -s hd720 <output-file>
