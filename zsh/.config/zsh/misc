@@ -3,6 +3,8 @@ alias c="clear"
 alias l="ls -la"
 alias o="cd .."
 
+alias zr="exec $SHELL -l"
+
 alias e="nvim"
 
 # copy pwd to clipboard
