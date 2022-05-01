@@ -3,7 +3,7 @@ alias c="clear"
 alias l="ls -la"
 alias o="cd .."
 
-alias nv="nvim"
+alias e="nvim"
 
 # copy pwd to clipboard
 alias cpwd="pwd | pbcopy"
