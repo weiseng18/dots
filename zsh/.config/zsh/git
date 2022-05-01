@@ -3,6 +3,17 @@ alias ga="git number add"
 alias gcm="git commit -m"
 alias gp="git push"
 
+# commit based on folder name
+# - assumes that the first folder name is the commit header
+# - assumes that all staged files have the same first folder
+function gcf() {
+    # 1. gives absolute path (from root dir of git repo)
+    # 2. of the first file
+    # 3. extract first dir
+    local header=$(git diff --name-only --staged | head --lines 1 | cut -f1 -d / )
+    git commit -m "$header: $1"
+}
+
 # diff/status
 alias gdi="git number diff"
 alias gds="git number diff --staged"
