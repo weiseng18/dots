@@ -93,3 +93,11 @@ nnoremap <leader>r :source $MYVIMRC<CR>
 " tabs
 nnoremap ˙ gT 
 nnoremap ¬ gt
+
+" --------------------------------------------------------- vim_abbrevs
+
+cnoreabbrev pc PlugClean
+cnoreabbrev pi PlugInstall
+cnoreabbrev pu PlugUpdate
+cnoreabbrev te tabedit
+cnoreabbrev ue UltiSnipsEdit
