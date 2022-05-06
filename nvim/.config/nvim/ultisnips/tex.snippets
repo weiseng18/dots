@@ -44,7 +44,7 @@ snippet hcs "header cheatsheet" i
 \usepackage{multicol}
 
 \usepackage{amsmath, amssymb}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
 \usepackage{graphicx}
 
 \usepackage{ulem}
@@ -54,10 +54,9 @@ snippet hcs "header cheatsheet" i
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 
 % envs
-\newcommand{\ol}[1]{\begin{enumerate}#1\end{enumerate}}
-\newcommand{\oll}[1]{\begin{enumerate}[leftmargin=*]#1\end{enumerate}}
-\newcommand{\ul}[1]{\begin{itemize}#1\end{itemize}}
-\newcommand{\ull}[1]{\begin{itemize}[leftmargin=*]#1\end{itemize}}
+\newcommand{\ol}[1]{\begin{enumerate}[leftmargin=*]#1\end{enumerate}}
+\newcommand{\ul}[1]{\begin{itemize}[leftmargin=*]#1\end{itemize}}
+\newcommand{\oli}[1]{\begin{enumerate*}[label=(\arabic*)]#1\end{enumerate*}}
 
 \graphicspath{ {./images/} }
 \pagestyle{empty}
@@ -134,8 +133,14 @@ snippet tb "table" w
 \end{center}
 endsnippet
 
-snippet ull "ull" w
-\ull {
+snippet ul "ul" w
+\ul {
+	\item $1
+}
+endsnippet
+
+snippet ol "ol" w
+\ol {
 	\item $1
 }
 endsnippet
