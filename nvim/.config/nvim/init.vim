@@ -2,18 +2,24 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'lervag/vimtex'
-Plug 'SirVer/ultisnips'
+" -------- visuals
+
+Plug 'NLKNguyen/papercolor-theme'       " theme
+Plug 'junegunn/goyo.vim'                " minimalistic editing
+
+" -------- language specific support
+Plug 'lervag/vimtex'                    " Compile LaTeX
 
 " This must be set before Plug to work
 " https://github.com/vim-pandoc/vim-pandoc/issues/342
 let g:pandoc#filetypes#pandoc_markdown = 0
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'vim-pandoc/vim-rmarkdown'
+Plug 'vim-pandoc/vim-rmarkdown'         " Compile RMarkdown
 
-Plug 'junegunn/goyo.vim'
+" -------- Misc
+
+Plug 'SirVer/ultisnips'                 " Snippets
 
 call plug#end()
 
