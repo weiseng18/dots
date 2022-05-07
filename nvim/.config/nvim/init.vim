@@ -30,10 +30,13 @@ Plug 'vim-pandoc/vim-rmarkdown'         " Compile RMarkdown
 " -------- Misc
 
 Plug 'SirVer/ultisnips'                 " Snippets
+Plug 'neovim/nvim-lspconfig'            " LSP
 
 call plug#end()
 
 " -------------------------------------------------------------------- vim_sets
+
+lua require("lsp")
 
 " indents
 set tabstop=4
