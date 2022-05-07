@@ -1,18 +1,3 @@
-# basic
-alias c="clear"
-alias l="ls -la"
-alias o="cd .."
-
-alias zr="exec $SHELL -l"
-
-alias e="nvim"
-
-# copy pwd to clipboard
-alias cpwd="pwd | pbcopy"
-
-# pdfgrep
-alias pg="pdfgrep -rin"
-
 # enable navi
 eval "$(navi widget zsh)"
 

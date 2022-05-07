@@ -1,0 +1,11 @@
+# ---- basic
+alias c="clear"
+alias l="ls -la"
+alias o="cd .."
+alias e="nvim"
+alias zr="exec $SHELL -l"         # reload shell
+
+# ---- helpers
+
+alias pg="pdfgrep -rin"           # search PDFs
+alias cpwd="pwd | pbcopy"         # copy pwd to clipboard
