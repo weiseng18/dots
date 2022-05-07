@@ -1,3 +1,13 @@
+" -------------------------------------------------------------------- contents
+" vim_plugs
+" vim_sets
+" vim_colors
+" vim_vimtex
+" vim_pandoc
+" vim_ultisnips
+" vim_remaps
+" vim_abbrevs
+
 " ------------------------------------------------------------------- vim_plugs
 
 call plug#begin('~/.config/nvim/plugged')
@@ -100,7 +110,7 @@ nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap ˙ gT 
 nnoremap ¬ gt
 
-" --------------------------------------------------------- vim_abbrevs
+" ----------------------------------------------------------------- vim_abbrevs
 
 cnoreabbrev pc PlugClean
 cnoreabbrev pi PlugInstall
