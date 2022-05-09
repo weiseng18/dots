@@ -1,8 +1,3 @@
-# open fzf-found pdf
-function popen() {
-    open "$(find . -name '*.pdf' | fzf)"
-}
-
 # fzf and cd to directory in current dir
 # also supports left/right arrow keys to go up/down
 # one layer, and repeat in new folder
