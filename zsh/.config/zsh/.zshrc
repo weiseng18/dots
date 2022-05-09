@@ -2,6 +2,7 @@ source $ZSH_DOTS/git
 source $ZSH_DOTS/misc
 source $ZSH_DOTS/oneliners
 source $ZSH_DOTS/nav
+source $ZSH_DOTS/prompt
 
 # enable zsh completion to show hidden files and folders
 setopt globdots
