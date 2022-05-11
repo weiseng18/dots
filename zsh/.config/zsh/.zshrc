@@ -4,6 +4,11 @@ source $ZSH_DOTS/oneliners
 source $ZSH_DOTS/nav
 source $ZSH_DOTS/prompt
 
+# editor
+export EDITOR=nvim
+export LESSHISTFILE=-
+[ $EDITOR = "nvim" ] && export MANPAGER="nvim +Man!"
+
 # enable zsh completion to show hidden files and folders
 setopt globdots
 
