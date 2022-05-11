@@ -111,6 +111,7 @@ nnoremap <Space> <Nop>
 let mapleader = " "
 nnoremap <leader>ev :tabedit $MYVIMRC<CR>
 nnoremap <leader>r :source $MYVIMRC<CR>
+nnoremap <leader>gw :%s/\s\+$//g<CR>   " Get rid of trailing whitespace
 
 " tabs
 nnoremap ˙ gT 
