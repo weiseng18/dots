@@ -4,7 +4,14 @@ source $ZSH_DOTS/oneliners
 source $ZSH_DOTS/nav
 source $ZSH_DOTS/prompt
 
-# editor
+# env vars
+export REPOS=$HOME/repos
+export DOTS=$REPOS/dots
+export ZSH_DOTS=$HOME/.config/zsh
+
+export NOTES_CONFIG=$REPOS/uni/config
+export NAVI_PATH=$DOTS/navi
+
 export EDITOR=nvim
 export LESSHISTFILE=-
 [ $EDITOR = "nvim" ] && export MANPAGER="nvim +Man!"
