@@ -1,10 +1,3 @@
-# -------------------------------------------------------------------- features
-source $ZSH_DOTS/git
-source $ZSH_DOTS/misc
-source $ZSH_DOTS/oneliners
-source $ZSH_DOTS/nav
-source $ZSH_DOTS/prompt
-
 # -------------------------------------------------------------------- env vars
 export REPOS=$HOME/repos
 export DOTS=$REPOS/dots
@@ -16,6 +9,13 @@ export NAVI_PATH=$DOTS/navi
 export EDITOR=nvim
 export LESSHISTFILE=-
 [ $EDITOR = "nvim" ] && export MANPAGER="nvim +Man!"
+
+# -------------------------------------------------------------------- features
+source $ZSH_DOTS/git
+source $ZSH_DOTS/misc
+source $ZSH_DOTS/oneliners
+source $ZSH_DOTS/nav
+source $ZSH_DOTS/prompt
 
 # ---------------------------------------------------------------- app specific
 export NVM_DIR="$HOME/.nvm"
