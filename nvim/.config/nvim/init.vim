@@ -27,16 +27,26 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'         " Compile RMarkdown
 
-" -------- Misc
+" -------- Snippets
 
-Plug 'SirVer/ultisnips'                 " Snippets
-Plug 'neovim/nvim-lspconfig'            " LSP
+Plug 'SirVer/ultisnips'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+
+" -------- LSP
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
 
 call plug#end()
 
 " -------------------------------------------------------------------- vim_sets
 
 lua require("lsp")
+lua require("nvim_cmp")
 
 " indents
 set tabstop=4
@@ -50,6 +60,9 @@ set autoindent
 
 " 2 spaces for latex
 autocmd Filetype tex setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+" 2 spaces for lua
+autocmd Filetype lua setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " 2 spaces for json, javascript, typescript
 autocmd Filetype json,javascript,typescript setlocal tabstop=2 softtabstop=2 shiftwidth=2
@@ -67,7 +80,7 @@ set relativenumber
 " misc
 set autochdir
 set termguicolors
-set colorcolumn=80 
+set colorcolumn=80
 set scrolloff=8
 set foldmethod=indent
 
@@ -114,7 +127,7 @@ nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>gw :%s/\s\+$//g<CR>   " Get rid of trailing whitespace
 
 " tabs
-nnoremap ˙ gT 
+nnoremap ˙ gT
 nnoremap ¬ gt
 
 " ----------------------------------------------------------------- vim_abbrevs
