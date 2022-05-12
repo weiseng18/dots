@@ -5,6 +5,7 @@ typeset -A local nav=(
   [s]="$REPOS/uni/Y1S2"
   [z]="$DOTS/zsh/.config/zsh"
   [r]="$REPOS"
+  [o]="$REPOS/orbital/"
 )
 
 for k dir in ${(kv)nav}; do
