@@ -25,6 +25,10 @@ function gcf() {
     git commit -m "$header: $1"
 }
 
+# remote
+alias grb="git branch -r --merged dev"
+alias grd="git push origin --delete"
+
 # diff/status
 alias gdi="git number diff"
 alias gds="git number diff --staged"
