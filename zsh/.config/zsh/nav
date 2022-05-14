@@ -6,6 +6,7 @@ typeset -A local nav=(
   [z]="$ZSH_DOTS"
   [r]="$REPOS"
   [o]="$REPOS/orbital/"
+  [t]="$DOTS/tmux/.config/tmux"
 )
 
 for k dir in ${(kv)nav}; do
