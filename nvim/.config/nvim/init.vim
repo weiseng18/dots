@@ -64,8 +64,8 @@ autocmd Filetype tex setlocal tabstop=2 softtabstop=2 shiftwidth=2
 " 2 spaces for lua
 autocmd Filetype lua setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
-" 2 spaces for json, javascript, typescript
-autocmd Filetype json,javascript,typescript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+" 2 spaces for json, javascript, typescript, tsx
+autocmd Filetype json,javascript,typescript,typescriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " for RMarkdown
 augroup rmarkdown_update
