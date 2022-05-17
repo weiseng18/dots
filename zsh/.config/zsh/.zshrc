@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------- env vars
 export REPOS=$HOME/repos
 export DOTS=$REPOS/dots
-export ZSH_DOTS=$HOME/.config/zsh
+export ZSH_DOTS=$DOTS/zsh/.config/zsh
 
 export NOTES_CONFIG=$REPOS/uni/config
 export NAVI_PATH=$DOTS/navi
