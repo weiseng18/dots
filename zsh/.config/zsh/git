@@ -4,6 +4,7 @@ alias gaa="git add --all"
 alias gcm="git commit -m"
 alias gp="git push"
 alias gco="git number checkout"
+alias gr="git number reset"
 
 # commit based on folder name
 # - assumes that the first folder name is the commit header
