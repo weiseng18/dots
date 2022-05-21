@@ -126,6 +126,9 @@ nnoremap <leader>ev :tabedit $MYVIMRC<CR>
 nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>gw :%s/\s\+$//g<CR>   " Get rid of trailing whitespace
 
+" show lsp error in a floating box
+nnoremap <leader>er :lua vim.diagnostic.open_float()<CR>
+
 " tabs
 nnoremap ˙ gT
 nnoremap ¬ gt
