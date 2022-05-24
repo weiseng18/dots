@@ -6,6 +6,9 @@ alias gp="git push"
 alias gco="git number checkout"
 alias gr="git number reset"
 
+# stash
+alias gsa="git stash --include-untracked"
+
 # commit based on folder name
 # - assumes that the first folder name is the commit header
 # - assumes that all staged files have the same first folder
@@ -34,12 +37,4 @@ alias grd="git push origin --delete"
 alias gdi="git number diff"
 alias gds="git number diff --staged"
 alias gst="git number"
-
-function gl() {
-    if [ "$1" != "" ]
-    then
-        git log --oneline -$1
-    else
-        git log --oneline -10
-    fi
-}
+alias gl="git log --oneline --all --graph"
