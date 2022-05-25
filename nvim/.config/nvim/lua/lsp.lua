@@ -28,3 +28,11 @@ nvim_lsp.tsserver.setup {
   end,
   capabilities = capabilities,
 }
+
+-- java lsp
+nvim_lsp.jdtls.setup {
+  cmd = { 'jdtls' },
+  root_dir = function(fname)
+    return nvim_lsp.util.root_pattern('pom.xml', 'gradle.build', '.git')(fname) or vim.fn.getcwd()
+  end
+}
