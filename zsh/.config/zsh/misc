@@ -40,7 +40,3 @@ function p() {
 
 # enable navi
 eval "$(navi widget zsh)"
-
-# setup java
-export JAVA_HOME="/usr/bin/java"
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
