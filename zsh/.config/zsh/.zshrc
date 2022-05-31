@@ -31,6 +31,10 @@ export NVM_DIR="$HOME/.nvm"
 # fzf fuzzy autocompletion and keybindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Keybindings
+# CTRL+R for fzf auto completion
+# CTRL+G for navi
+
 # --------------------------------------------------------------- shell options
 
 setopt globdots # enable zsh completion to show hidden files and folders
