@@ -5,7 +5,7 @@ typeset -A local nav=(
   [s]="$REPOS/uni/Y1S4"
   [z]="$ZSH_DOTS"
   [r]="$REPOS"
-  [o]="$REPOS/orbital/"
+  [m]="$REPOS/orbital/modtree"
   [t]="$DOTS/tmux/.config/tmux"
 )
 
