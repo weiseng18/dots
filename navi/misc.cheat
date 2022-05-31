@@ -5,3 +5,8 @@ kpsewhich <package-name>.sty
 
 # Install LaTeX package
 sudo tlmgr install <package-name>
+
+# Generate code dependency graph
+madge --image graph.png <file-name>
+
+$file-name: ls
