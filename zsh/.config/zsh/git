@@ -36,5 +36,5 @@ alias grd="git push origin --delete"
 # diff/status
 alias gdi="git number diff"
 alias gds="git number diff --staged"
-alias gst="git number"
+alias gs="git number"
 alias gl="git log --oneline --all --graph"

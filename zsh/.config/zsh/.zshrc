@@ -16,13 +16,6 @@ export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 # jdtls-launcher
 export PATH=$PATH:$HOME/.local/bin
 
-# -------------------------------------------------------------------- features
-source $ZSH_DOTS/git
-source $ZSH_DOTS/misc
-source $ZSH_DOTS/oneliners
-source $ZSH_DOTS/nav
-source $ZSH_DOTS/prompt
-
 # ---------------------------------------------------------------- app specific
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
@@ -31,9 +24,19 @@ export NVM_DIR="$HOME/.nvm"
 # fzf fuzzy autocompletion and keybindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# to let git status use gs
+alias ghostscript="/usr/local/bin/gs"
+
 # Keybindings
 # CTRL+R for fzf auto completion
 # CTRL+G for navi
+
+# -------------------------------------------------------------------- features
+source $ZSH_DOTS/git
+source $ZSH_DOTS/misc
+source $ZSH_DOTS/oneliners
+source $ZSH_DOTS/nav
+source $ZSH_DOTS/prompt
 
 # --------------------------------------------------------------- shell options
 
