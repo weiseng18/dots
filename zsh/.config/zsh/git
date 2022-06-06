@@ -5,6 +5,7 @@ alias gcm="git commit -m"
 alias gp="git push"
 alias gco="git number checkout"
 alias gr="git number reset"
+alias gb="git branch"
 
 # stash
 alias gsa="git stash --include-untracked"
