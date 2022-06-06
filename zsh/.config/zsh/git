@@ -17,7 +17,7 @@ function gcf() {
     local level=1
 
     local gitRoot=$(git rev-parse --show-toplevel)
-    if [ $gitRoot = /Users/weiseng/repos/uni ]
+    if [ $gitRoot = $REPOS/uni ]
     then
         level=2
     fi
