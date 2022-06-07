@@ -7,6 +7,9 @@ alias gco="git number checkout"
 alias gr="git number reset"
 alias gb="git branch"
 
+# push and set upstream as origin
+alias go="git push --set-upstream origin $(git branch --show-current)"
+
 # stash
 alias gsa="git stash --include-untracked"
 
