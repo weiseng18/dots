@@ -3,9 +3,9 @@ alias c="clear"
 alias l="ls -la"
 alias o="cd .."
 alias e="nvim"
-alias zr="exec $SHELL -l"         # reload shell
+alias zr="exec $SHELL -l"                    # reload shell
 
 # ---- helpers
 
-alias pg="pdfgrep -rin"           # search PDFs
-alias cpwd="pwd | pbcopy"         # copy pwd to clipboard
+alias pg="pdfgrep -rin"                      # search PDFs
+alias cpwd="pwd | tr -d '\n' | pbcopy"       # copy pwd to clipboard
