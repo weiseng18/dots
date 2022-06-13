@@ -1,9 +1,15 @@
 # ---- basic
+
 alias c="clear"
 alias l="ls -la"
 alias o="cd .."
 alias e="nvim"
 alias zr="exec $SHELL -l"                    # reload shell
+
+# --- yarn
+
+alias yb="yarn build"
+alias yt="yarn test"
 
 # ---- helpers
 

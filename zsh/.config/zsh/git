@@ -5,7 +5,11 @@ alias gcm="git commit -m"
 alias gp="git push"
 alias gco="git number checkout"
 alias gr="git number reset"
+
+# branch and fetch
 alias gb="git branch"
+alias grh="git reset --hard"
+alias gf="git fetch"
 
 # push and set upstream as origin
 alias go="git push --set-upstream origin $(git branch --show-current)"
