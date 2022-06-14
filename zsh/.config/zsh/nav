@@ -8,6 +8,8 @@ typeset -A local nav=(
   [m]="$REPOS/orbital/modtree"
   [t]="$DOTS/tmux/.config/tmux"
   [nv]="$NAVI_PATH"
+  [cs]="$REPOS/nus-cheatsheets"
+  [u]="$REPOS/uni"
 )
 
 for k dir in ${(kv)nav}; do
