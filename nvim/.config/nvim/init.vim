@@ -126,6 +126,7 @@ nnoremap <leader>ev :tabedit $MYVIMRC<CR>
 nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>gw :%s/\s\+$//g<CR>   " Get rid of trailing whitespace
 nnoremap <leader>ga :%y+<CR> " Get all lines (copy)
+nnoremap <leader>ge "+y$ " Get rest of line (copy)
 
 " show lsp error in a floating box
 nnoremap <leader>er :lua vim.diagnostic.open_float()<CR>
