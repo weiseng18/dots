@@ -10,6 +10,7 @@ alias zr="exec $SHELL -l"                    # reload shell
 
 alias yb="yarn build"
 alias yt="yarn test"
+alias ys="yarn serve"
 
 # ---- helpers
 
