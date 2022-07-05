@@ -5,11 +5,12 @@ alias l="ls -la"
 alias o="cd .."
 alias e="nvim"
 alias zr="exec $SHELL -l"                    # reload shell
+alias x="exit"
 
 # --- yarn
 
 alias yb="yarn build"
-alias yt="yarn test"
+alias yt="yarn test:a"
 alias ys="yarn serve"
 
 # ---- helpers
