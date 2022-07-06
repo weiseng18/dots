@@ -41,6 +41,10 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
+" -------- Wakatime
+
+Plug 'wakatime/vim-wakatime'
+
 call plug#end()
 
 " -------------------------------------------------------------------- vim_sets
