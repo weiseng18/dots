@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-local stow_folders=(ags kitty nvim tmux zsh)
+local stow_folders=(ags kitty nvim tmux xbar zsh)
 
 for folder in ${stow_folders}; do
   stow --restow \
