@@ -10,8 +10,9 @@ alias x="exit"
 # --- yarn
 
 alias yb="yarn build"
-alias yt="yarn test:a"
+alias yt="yarn test"
 alias ys="yarn serve"
+alias yd="yarn dev"
 
 # ---- helpers
 
