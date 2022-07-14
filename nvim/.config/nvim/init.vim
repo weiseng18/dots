@@ -87,6 +87,7 @@ set termguicolors
 set colorcolumn=80
 set scrolloff=8
 set foldmethod=indent
+set statusline+=%F       " set full file path in buffer
 
 " ------------------------------------------------------------------ vim_colors
 
