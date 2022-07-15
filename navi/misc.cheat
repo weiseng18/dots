@@ -15,3 +15,6 @@ $file-name: ls
 git push origin <tag-name>
 
 $tag-name: git tag
+
+# Delete remote branch
+git push origin -d <branch-name>
