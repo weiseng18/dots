@@ -7,12 +7,16 @@ alias e="nvim"
 alias zr="exec $SHELL -l"                    # reload shell
 alias x="exit"
 
-# --- yarn
+# --- modtree
 
 alias yb="yarn build"
 alias yt="yarn test"
 alias ys="yarn serve"
 alias yd="yarn dev"
+
+alias yds="yarn dev:server"
+alias ye="yarn e2e"
+alias resetdb="2m && cd scripts && ./postgres.sh && 2m"
 
 # ---- helpers
 
