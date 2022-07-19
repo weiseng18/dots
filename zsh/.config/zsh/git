@@ -19,7 +19,7 @@ alias gwl="git worktree list"
 alias gwr="git worktree remove"
 
 # push and set upstream as origin
-alias go="git push --set-upstream origin $(git branch --show-current)"
+alias gpso="git push --set-upstream origin"
 
 # stash
 alias gsa="git stash --include-untracked"
