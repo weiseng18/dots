@@ -10,11 +10,3 @@ sudo tlmgr install <package-name>
 madge --image graph.png <file-name>
 
 $file-name: ls
-
-# Push git tags
-git push origin <tag-name>
-
-$tag-name: git tag
-
-# Delete remote branch
-git push origin -d <branch-name>
