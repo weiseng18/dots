@@ -45,6 +45,12 @@ Plug 'hrsh7th/nvim-cmp'
 
 Plug 'wakatime/vim-wakatime'
 
+" -------- Telescope
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
 
 " -------------------------------------------------------------------- vim_sets
@@ -144,6 +150,10 @@ nnoremap <leader>er :lua vim.diagnostic.open_float()<CR>
 " tabs
 nnoremap ˙ gT
 nnoremap ¬ gt
+
+" telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
 " ----------------------------------------------------------------- vim_abbrevs
 
