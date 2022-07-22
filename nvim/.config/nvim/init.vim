@@ -87,7 +87,12 @@ set termguicolors
 set colorcolumn=80
 set scrolloff=8
 set foldmethod=indent
-set statusline+=%F       " set full file path in buffer
+
+" statusline
+set statusline=%F               " set full file path in buffer
+set statusline+=\ %m            " is modified
+set statusline+=%=              " switch to the right side
+set statusline+=Line\ %l/%L     " line info
 
 " ------------------------------------------------------------------ vim_colors
 
