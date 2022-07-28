@@ -57,6 +57,7 @@ call plug#end()
 
 lua require("user/lsp")
 lua require("user/nvim_cmp")
+lua require("user/_telescope")
 
 " indents
 set tabstop=4
@@ -150,10 +151,6 @@ nnoremap <leader>er :lua vim.diagnostic.open_float()<CR>
 " tabs
 nnoremap ˙ gT
 nnoremap ¬ gt
-
-" telescope
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
 " ----------------------------------------------------------------- vim_abbrevs
 
