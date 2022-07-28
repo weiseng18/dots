@@ -1,10 +1,10 @@
 local capabilities = require("cmp_nvim_lsp").update_capabilities(
-  vim.lsp.protocol.make_client_capabilities()
+vim.lsp.protocol.make_client_capabilities()
 )
 
 local nvim_lsp = require('lspconfig')
 local set_keymap = function(bufnr, ...)
-    vim.api.nvim_buf_set_keymap(bufnr, ...)
+  vim.api.nvim_buf_set_keymap(bufnr, ...)
 end
 local opts = { noremap = true, silent = true }
 
@@ -35,4 +35,20 @@ nvim_lsp.jdtls.setup {
   root_dir = function(fname)
     return nvim_lsp.util.root_pattern('pom.xml', 'gradle.build', '.git')(fname) or vim.fn.getcwd()
   end
+}
+
+-- lua lsp
+nvim_lsp.sumneko_lua.setup {
+  settings = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+      Lua = {
+        runtime = { version = "LuaJIT", path = runtime_path },
+        diagnostics = { globals = { "vim" } },
+        workspace = { library = vim.api.nvim_get_runtime_file("", true) },
+        telemetry = { enable = false },
+      },
+    },
+  }
 }
