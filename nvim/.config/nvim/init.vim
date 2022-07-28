@@ -55,8 +55,8 @@ call plug#end()
 
 " -------------------------------------------------------------------- vim_sets
 
-lua require("lsp")
-lua require("nvim_cmp")
+lua require("user/lsp")
+lua require("user/nvim_cmp")
 
 " indents
 set tabstop=4
