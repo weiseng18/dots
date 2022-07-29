@@ -4,6 +4,13 @@ function pl() {
     open "$(fd -e pdf | fzf)"
 }
 
+# java compile and run
+# assumes the main class and file name are identical
+function javacr {
+    local className="$(basename $1 .java)"
+    javac $1 && java $className
+}
+
 # fzf and cd to directory in current dir
 # also supports left/right arrow keys to go up/down
 # one layer, and repeat in new folder
