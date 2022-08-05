@@ -2,7 +2,7 @@
 
 typeset -A local nav=(
   [d]="$DOTS"
-  [s]="$REPOS/uni/Y1S4"
+  [s]="$REPOS/uni/Y2S1"
   [z]="$ZSH_DOTS"
   [r]="$REPOS"
   [m]="$REPOS/orbital/modtree"
