@@ -10,3 +10,6 @@ sudo tlmgr install <package-name>
 madge --image graph.png <file-name>
 
 $file-name: ls
+
+# Find files containing a search string, and open all in neovim tabs
+nvim -p $(rg -l <search-string>)
