@@ -128,6 +128,9 @@ let g:pandoc#spell#enabled = 0
 " to allow ultisnips triggers to function properly
 " map! <C-h> <Nop>
 
+" anaconda python path
+let g:python3_host_prog='/Users/weiseng/opt/anaconda3/bin/python'
+
 let g:UltiSnipsSnippetsDir = '$DOTS/nvim/.config/nvim/ultisnips'
 
 let g:UltiSnipsExpandTrigger       = '<Tab>'
