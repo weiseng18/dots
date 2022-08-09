@@ -8,7 +8,7 @@ local is_git_repo = function()
   return git_check == "true"
 end
 
--- Find in repo
+-- Find file in repo
 local find_in_repo = function()
   if not is_git_repo() then
     return
