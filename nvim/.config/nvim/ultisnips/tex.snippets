@@ -1,5 +1,8 @@
 snippet init "init" i
 \documentclass[a4paper]{article}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{xcolor}
+
 \begin{document}
 $1
 \end{document}
@@ -167,4 +170,14 @@ endsnippet
 context "math()"
 snippet inv "inverse" iA
 ^{-1}
+endsnippet
+
+snippet color "color" w
+\textcolor{$1}{$2}$0
+endsnippet
+
+snippet ul "unordered list" w
+\begin{itemize}
+	\item $1
+\end{itemize}
 endsnippet
