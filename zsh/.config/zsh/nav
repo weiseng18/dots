@@ -11,6 +11,7 @@ typeset -A local nav=(
   [cs]="$REPOS/nus-cheatsheets"
   [u]="$REPOS/uni"
   [n]="$DOTS/nvim/.config/nvim"
+  [b]="$REPOS/books"
 )
 
 for k dir in ${(kv)nav}; do
