@@ -6,6 +6,9 @@ export ZSH_DOTS=$DOTS/zsh/.config/zsh
 export NOTES_CONFIG=$REPOS/uni/config
 export NAVI_PATH=$DOTS/navi
 
+# modtree
+export MODTREE_ENV_SOURCE=$REPOS/orbital/env
+
 export EDITOR=nvim
 export LESSHISTFILE=-
 [ $EDITOR = "nvim" ] && export MANPAGER="nvim +Man!"
