@@ -56,8 +56,6 @@ snippet hcs "header cheatsheet" i
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 
 % envs
-\newcommand{\ol}[1]{\begin{enumerate}[leftmargin=*]#1\end{enumerate}}
-\newcommand{\ul}[1]{\begin{itemize}[leftmargin=*]#1\end{itemize}}
 \newcommand{\oli}[1]{\begin{enumerate*}[label=(\arabic*)]#1\end{enumerate*}}
 
 \graphicspath{ {./images/} }
@@ -180,4 +178,30 @@ snippet ul "unordered list" w
 \begin{itemize}
 	\item $1
 \end{itemize}
+endsnippet
+
+snippet ol "ordered list" w
+\begin{enumerate}
+	\item $1
+\end{enumerate}
+endsnippet
+
+snippet bf "bold" w
+\textbf{$1}
+endsnippet
+
+# ----------
+# cheatsheets
+# ----------
+
+snippet ulc "unordered list cheatsheet" w
+\begin{itemize}[leftmargin=*]
+	\item $1
+\end{itemize}
+endsnippet
+
+snippet olc "ordered list cheatsheet" w
+\begin{enumerate}[leftmargin=*]
+	\item $1
+\end{enumerate}
 endsnippet
