@@ -1,7 +1,15 @@
 snippet init "init" i
 \documentclass[a4paper]{article}
 \usepackage[margin=1.2in]{geometry}
+\usepackage{amsmath, amssymb}
 \usepackage{xcolor}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% ref with brackets
+\let\oldref\ref
+\renewcommand{\ref}[1]{(\oldref{#1})}
 
 \begin{document}
 $1
