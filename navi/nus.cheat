@@ -1,5 +1,5 @@
 % nus
 
 # CS3241 OpenGL compile
-g++ -framework OpenGL -framework GLUT <file-name>
+g++ -Wno-deprecated-declarations -framework OpenGL -framework GLUT <file-name>
 $file-name: ls *.cpp
