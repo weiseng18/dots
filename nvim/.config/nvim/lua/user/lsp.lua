@@ -37,6 +37,17 @@ nvim_lsp.jdtls.setup {
   end
 }
 
+-- haskell lsp
+nvim_lsp.hls.setup({
+  on_attach = on_attach,
+  settings = {
+    haskell = {
+      hlintOn = true,
+      formattingProvider = "fourmolu"
+    }
+  }
+})
+
 -- lua lsp
 nvim_lsp.sumneko_lua.setup {
   settings = {
