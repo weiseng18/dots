@@ -63,3 +63,6 @@ nvim_lsp.sumneko_lua.setup {
     },
   }
 }
+
+--- c++ lsp
+nvim_lsp.clangd.setup{}
