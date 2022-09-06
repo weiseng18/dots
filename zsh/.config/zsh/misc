@@ -1,7 +1,7 @@
 # open fzf-found pdf
 # pdf-launcher
 function pl() {
-    open "$(fd -e pdf | fzf)"
+    open "$(fd -e pdf -e pptx | fzf)"
 }
 
 # java compile and run
