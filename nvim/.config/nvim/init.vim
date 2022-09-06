@@ -75,6 +75,9 @@ autocmd Filetype tex setlocal tabstop=2 softtabstop=2 shiftwidth=2
 " 2 spaces for lua
 autocmd Filetype lua setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
+" 2 spaces for haskell
+autocmd Filetype haskell setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
 " 2 spaces for json, javascript, typescript, tsx, css
 autocmd Filetype json,javascript,typescript,typescriptreact,css setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
