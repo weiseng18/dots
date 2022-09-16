@@ -43,7 +43,14 @@ nvim_lsp.hls.setup({
   settings = {
     haskell = {
       hlintOn = true,
-      formattingProvider = "fourmolu"
+      formattingProvider = "fourmolu",
+      plugin = {
+          hlint = {
+              -- Disable stuff like camelCase checking
+              -- or redundant brackets checking
+              diagnosticsOn = false
+          }
+      }
     }
   }
 })
