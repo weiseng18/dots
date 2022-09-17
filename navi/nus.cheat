@@ -3,3 +3,6 @@
 # CS3241 OpenGL compile
 g++ -Wno-deprecated-declarations -framework OpenGL -framework GLUT <file-name>
 $file-name: ls *.cpp
+
+# Haskell get installed packages
+cabal list --installed
