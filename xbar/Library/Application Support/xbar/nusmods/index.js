@@ -26,7 +26,7 @@ function NUSDate() {
     if (weekInfo.weekType == 'Instructional') {
       weekString = `Week ${weekNumber}`
     } else {
-        weekString = `${weekType} Week`
+      weekString = `${weekInfo.weekType} Week`
     }
   }
 
