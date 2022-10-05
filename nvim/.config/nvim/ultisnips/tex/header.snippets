@@ -60,6 +60,10 @@ snippet hcs "header cheatsheet" i
 \usepackage{ulem}
 \usepackage{makecell}
 
+% horizontal list
+\newlist{hlist}{enumerate*}{1}
+\setlist[hlist]{label={}, afterlabel={}, itemjoin={{ \textbar{} }}}
+
 % math
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 

@@ -47,6 +47,14 @@ snippet tb "table" w
 \end{center}
 endsnippet
 
+snippet ig "include graphics" w
+\includegraphics[width=\columnwidth]{$1}$0
+endsnippet
+
+snippet bl "bold" w
+\textbf{$1}$0
+endsnippet
+
 # math
 
 snippet df "dfrac" w
@@ -61,8 +69,14 @@ snippet tf "tfrac" w
 \tfrac{$1}{$2}$0
 endsnippet
 
-snippet color "color" w
+# color
+
+snippet cl "color" w
 \textcolor{$1}{$2}$0
+endsnippet
+
+snippet clr "color red" w
+\textcolor{red}{$1}$0
 endsnippet
 
 snippet ul "unordered list" w
@@ -93,6 +107,13 @@ snippet beg "begin/end" bA
 \end{$1}
 endsnippet
 
+snippet lst "lstlisting" bA
+\begin{lstlisting}
+$0
+\end{lstlisting}
+endsnippet
+
+context "math()"
 snippet => "implies" Ai
 \implies
 endsnippet
@@ -102,18 +123,22 @@ snippet inv "inverse" iA
 ^{-1}
 endsnippet
 
+context "math()"
 snippet >= "geq" Ai
 \geq
 endsnippet
 
+context "math()"
 snippet <= "leq" Ai
 \leq
 endsnippet
 
+context "math()"
 snippet -> "rightarrow" Ai
 \rightarrow
 endsnippet
 
+context "math()"
 snippet <- "leftarrow" Ai
 \leftarrow
 endsnippet
