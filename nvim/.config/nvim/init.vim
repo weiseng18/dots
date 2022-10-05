@@ -69,6 +69,9 @@ set wrap linebreak
 set breakindent
 set autoindent
 
+" Make .pl be recognized as Prolog
+autocmd BufNewFile,BufRead *.pl set ft=prolog
+
 " 2 spaces for latex
 autocmd Filetype tex setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
