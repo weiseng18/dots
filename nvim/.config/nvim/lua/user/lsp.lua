@@ -58,7 +58,6 @@ nvim_lsp.hls.setup({
 -- lua lsp
 nvim_lsp.sumneko_lua.setup {
   settings = {
-    on_attach = on_attach,
     capabilities = capabilities,
     settings = {
       Lua = {
