@@ -51,5 +51,9 @@ function p() {
     pass -c $strip
 }
 
+function cr() {
+    g++ $1 && ./a.out
+}
+
 # enable navi
 eval "$(navi widget zsh)"
