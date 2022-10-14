@@ -72,3 +72,9 @@ nvim_lsp.sumneko_lua.setup {
 
 --- c++ lsp
 nvim_lsp.clangd.setup{}
+
+-- prolog
+require('user/prolog_lsp')
+nvim_lsp.prolog_lsp.setup {
+  on_attach = on_attach,
+}
