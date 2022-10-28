@@ -71,10 +71,18 @@ nvim_lsp.sumneko_lua.setup {
 }
 
 --- c++ lsp
-nvim_lsp.clangd.setup{}
+nvim_lsp.clangd.setup{
+  cmd = { 'clangd', '--compile-commands-dir=.' }
+}
 
 -- prolog
 require('user/prolog_lsp')
 nvim_lsp.prolog_lsp.setup {
   on_attach = on_attach,
 }
+
+--- python
+nvim_lsp.pylsp.setup{}
+
+-- scala
+nvim_lsp.metals.setup{}
