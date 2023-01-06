@@ -42,11 +42,12 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
 " -------- Prolog LSP
+
 Plug 'jamesnvc/lsp_server'
 
 " -------- Wakatime
 
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 
 " -------- Telescope
 
