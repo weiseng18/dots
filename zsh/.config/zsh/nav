@@ -2,7 +2,7 @@
 
 typeset -A local nav=(
   [d]="$DOTS"
-  [s]="$REPOS/uni/Y2S1"
+  [s]="$REPOS/uni/Y2S2"
   [z]="$ZSH_DOTS"
   [r]="$REPOS"
   [m]="$REPOS/orbital/modtree"
@@ -12,6 +12,7 @@ typeset -A local nav=(
   [u]="$REPOS/uni"
   [n]="$DOTS/nvim/.config/nvim"
   [b]="$REPOS/books"
+  [g]="$HOME/Documents/Games/GBA"
 )
 
 for k dir in ${(kv)nav}; do
