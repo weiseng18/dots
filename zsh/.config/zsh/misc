@@ -52,7 +52,15 @@ function p() {
 }
 
 function cr() {
-    g++ $1 && ./a.out
+    g++ --std=c++17 main.cpp && ./a.out
+}
+
+function crt() {
+    cr < test.in
+}
+
+function kt() {
+    mkdir $1 && cd $1 && touch main.cpp && e main.cpp
 }
 
 # enable navi
