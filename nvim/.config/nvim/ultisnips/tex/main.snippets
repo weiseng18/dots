@@ -48,11 +48,26 @@ snippet tb "table" w
 endsnippet
 
 snippet ig "include graphics" w
-\includegraphics[width=\columnwidth]{$1}$0
+\begin{center}
+	\includegraphics[width=\columnwidth]{$1}$0
+\end{center}
 endsnippet
 
 snippet bl "bold" w
 \textbf{$1}$0
+endsnippet
+
+snippet 2c "two-column" w
+\begin{minipage}{$1\columnwidth}
+\end{minipage}
+\begin{minipage}{$2\columnwidth}
+\end{minipage}
+endsnippet
+
+snippet 2h "two half columns" w
+\begin{multicols*}{2}
+\columnbreak
+\end{multicols*}
 endsnippet
 
 # math
@@ -116,6 +131,11 @@ endsnippet
 context "math()"
 snippet => "implies" Ai
 \implies
+endsnippet
+
+context "math()"
+snippet sb "subset" Ai
+\subset
 endsnippet
 
 context "math()"

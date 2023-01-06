@@ -32,7 +32,7 @@ snippet hc "header code" i
 	belowskip=1mm,
 	showstringspaces=false,
 	columns=flexible,
-	basicstyle={\small\ttfamily},
+	basicstyle={\footnotesize\ttfamily},
 	numberstyle=\color{gray},
 	keywordstyle=\color{blue}\textbf,
 	commentstyle=\color{dkgreen},
@@ -50,7 +50,7 @@ endsnippet
 snippet hcs "header cheatsheet" i
 % ------------ begin cheatsheet
 \documentclass[a4paper]{article}
-\usepackage[a4paper,margin=0.3in,landscape]{geometry}
+\usepackage[a4paper,margin=0.1in]{geometry}
 \usepackage{multicol}
 
 \usepackage{amsmath, amssymb}
@@ -83,18 +83,18 @@ snippet hcs "header cheatsheet" i
 \renewcommand{\subsection}{
 	\@startsection{subsection}{2}{0pt}{1ex}{1.2ex} {\raggedleft\normalfont\normalsize\bfseries\fbox}}
 \renewcommand{\subsubsection}{
-	\@startsection{subsubsection}{3}{0pt}{1ex}{0.8ex} {\raggedleft\normalfont\small\bfseries\uline}}
+	\@startsection{subsubsection}{3}{0pt}{1ex}{0.8ex} {\raggedleft\normalfont\footnotesize\bfseries\uline}}
 \renewcommand{\paragraph}{
 	\@startsection{paragraph}{4}{0pt}{1.5ex}{-0.8em}{\normalfont\bfseries}}
 % ------------ end cheatsheet
 
 \begin{document}
-\small
+\footnotesize
 \setlength{\abovedisplayskip}{0pt}
 \setlength{\belowdisplayskip}{0pt}
 \setlength{\abovedisplayshortskip}{0pt}
 \setlength{\belowdisplayshortskip}{0pt}
-\begin{multicols*}{4}
+\begin{multicols*}{3}
 	\part*{\centering \underline{$1}}
 	$0
 \end{multicols*}
