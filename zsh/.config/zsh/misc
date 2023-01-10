@@ -51,6 +51,8 @@ function p() {
     pass -c $strip
 }
 
+# Competitive Programming
+#
 function cr() {
     g++ --std=c++17 main.cpp && ./a.out
 }
@@ -61,6 +63,10 @@ function crt() {
 
 function kt() {
     mkdir $1 && cd $1 && touch main.cpp && e main.cpp
+}
+
+function prm() {
+    python3 main.py
 }
 
 # enable navi
