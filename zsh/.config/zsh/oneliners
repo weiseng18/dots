@@ -23,3 +23,6 @@ alias resetdb="2m && cd scripts && ./postgres.sh && 2m"
 
 alias pg="pdfgrep -rin"                      # search PDFs
 alias cpwd="pwd | tr -d '\n' | pbcopy"       # copy pwd to clipboard
+
+# --- NUS
+alias matlab="/Applications/MATLAB_R2022b.app/bin/matlab -nojvm -nodesktop"
