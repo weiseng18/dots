@@ -54,7 +54,7 @@ function p() {
 # Competitive Programming
 #
 function cr() {
-    g++ --std=c++17 main.cpp && ./a.out
+    g++-12 --std=c++17 main.cpp && ./a.out
 }
 
 function crt() {
