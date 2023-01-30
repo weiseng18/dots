@@ -47,7 +47,7 @@ function g() {
 
 function p() {
     local target=$(fd --base-directory ~/.password-store -e .gpg | fzf) # list all .gpg files
-    local strip=${target[3,-1]:r}  # strip first 2 chars, and extension
+    local strip=${target[1,-1]:r}  # strip first 2 chars, and extension
     pass -c $strip
 }
 
