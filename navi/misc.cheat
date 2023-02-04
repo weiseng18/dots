@@ -13,3 +13,8 @@ $file-name: ls
 
 # Find files containing a search string, and open all in neovim tabs
 nvim -p $(rg -l <search-string>)
+
+# Zip a folder
+zip -r <folder-name>.zip <folder-name>
+
+$folder-name: ls
