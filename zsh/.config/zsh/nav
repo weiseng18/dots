@@ -13,6 +13,8 @@ typeset -A local nav=(
   [n]="$DOTS/nvim/.config/nvim"
   [b]="$REPOS/books"
   [g]="$HOME/Documents/Games/GBA"
+  [c]="$REPOS/codeforces"
+  [k]="$REPOS/kattis"
 )
 
 for k dir in ${(kv)nav}; do
