@@ -54,7 +54,7 @@ function p() {
 # Competitive Programming
 #
 function cr() {
-    g++-12 --std=c++17 main.cpp && ./a.out
+    g++-12 --std=c++17 -O3 main.cpp && ./a.out
 }
 
 function crt() {
@@ -65,7 +65,11 @@ function kt() {
     mkdir $1 && cd $1 && touch main.cpp && e main.cpp
 }
 
-function prm() {
+function ktp() {
+    mkdir $1 && cd $1 && touch main.py && e main.py
+}
+
+function pr() {
     python3 main.py
 }
 
