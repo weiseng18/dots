@@ -2,20 +2,95 @@ snippet init "init" w
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef pair<int, int> ii;
-typedef long long ll;
-typedef vector<int> vi;
-typedef vector<ii> vii;
+using ll = long long;
+using pii = pair<int, int>;
+using pll = pair<ll, ll>;
+using vi = vector<int>;
+using vl = vector<ll>;
+using vii = vector<pii>;
+using vll = vector<pll>;
 
 #define INF 1e9
 #define EPS 1e-9
+#define PI 2*acos(0)
 
 #define FOR(i, j, k) for (int i=j; i<k; i++)
+#define REP(i, k) for (int i=0; i<k; i++)
 #define Vec2D(V, R, C) vector<vi> V(R, vi(C))
+#define ALL(x) (x).begin(), (x).end()
+#define REV(x) (x).rbegin(), (x).rend()
+#define SZ(x) ((int)(x).size())
+#define pb push_back
+#define eb emplace_back
 
-int main() {
+void precomp() {
+
+}
+
+void solve() {
 	$1
 }
+
+int main() {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+
+	precomp();
+	solve();
+}
+endsnippet
+
+snippet tc "tc" w
+#include <bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+using pii = pair<int, int>;
+using pll = pair<ll, ll>;
+using vi = vector<int>;
+using vl = vector<ll>;
+using vii = vector<pii>;
+using vll = vector<pll>;
+
+#define INF 1e9
+#define EPS 1e-9
+#define PI 3.141592654
+
+#define FOR(i, j, k) for (int i=j; i<k; i++)
+#define REP(i, k) for (int i=0; i<k; i++)
+#define Vec2D(V, R, C) vector<vi> V(R, vi(C))
+#define ALL(x) (x).begin(), (x).end()
+#define REV(x) (x).rbegin(), (x).rend()
+#define SZ(x) ((int)(x).size())
+#define pb push_back
+#define eb emplace_back
+
+void precomp() {
+
+}
+
+void solve() {
+	$1
+}
+
+int main() {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+
+	precomp();
+
+	int T;
+	cin >> T;
+	while (T--) {
+		solve();
+	}
+}
+endsnippet
+
+snippet setp "set precision" w
+cout << fixed << setprecision(10);
 endsnippet
 
 snippet sumd "sum of digits" w
@@ -26,11 +101,11 @@ int sumd(int x) {
 endsnippet
 
 snippet tokenize "tokenize" w
-vector<string> tokenize(string s) {
+vector<string> tokenize(string s, char c) {
 	string buf;
 	stringstream ss(s);
 	vector<string> tokens;
-	while (getline(ss, buf, ' '))
+	while (getline(ss, buf, c))
 		tokens.push_back(buf);
 	return tokens;
 }
