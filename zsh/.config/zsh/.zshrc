@@ -16,6 +16,9 @@ export LESSHISTFILE=-
 # setup java
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 
+# setup matlab
+export PATH="/Applications/MATLAB_R2022b.app/bin/:$PATH"
+
 # jdtls-launcher
 export PATH=$PATH:$HOME/.local/bin
 
