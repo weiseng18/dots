@@ -15,6 +15,7 @@ typeset -A local nav=(
   [g]="$HOME/Documents/Games/GBA"
   [c]="$REPOS/codeforces"
   [k]="$REPOS/kattis"
+  [p]="$HOME/print"
 )
 
 for k dir in ${(kv)nav}; do
