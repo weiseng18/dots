@@ -73,5 +73,20 @@ function pr() {
     python3 main.py
 }
 
+# PDF stuff
+function ppr() {
+    local target=$(pwd)/$(fd -e "pdf" | fzf)
+    local basename=$(basename $target .pdf)
+    local output_loc="$HOME/print/$basename.pdf"
+    local TMP_FILE="./tmp.pdf"
+
+    if [ -e $output_loc ]; then
+        echo "Error - File already exists"
+    else
+        pdfjam --nup $1 --a4paper "$target" -o $output_loc
+        echo "Done"
+    fi
+}
+
 # enable navi
 eval "$(navi widget zsh)"
