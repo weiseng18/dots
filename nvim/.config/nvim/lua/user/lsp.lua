@@ -86,3 +86,6 @@ nvim_lsp.pylsp.setup{}
 
 -- scala
 nvim_lsp.metals.setup{}
+
+-- GLSL
+nvim_lsp.glslls.setup{}
