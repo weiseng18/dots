@@ -1,0 +1,23 @@
+#!/opt/homebrew/bin/python3
+
+from PyPDF2 import PdfReader, PdfWriter
+from sys import argv
+
+input_file = argv[1]
+output_file = argv[2]
+
+with open(input_file, 'rb') as file:
+    pdf_reader = PdfReader(file)
+    pdf_writer = PdfWriter()
+
+    for page_num in range(len(pdf_reader.pages)):
+        page = pdf_reader.pages[page_num]
+        
+        if page_num % 2 != 0:  # Rotate even pages (zero-indexed, so even pages have odd indices)
+            page.rotate(180)  # Rotate page 180 degrees
+        
+        pdf_writer.add_page(page)
+
+    with open(output_file, 'wb') as output:
+        pdf_writer.write(output)
+
