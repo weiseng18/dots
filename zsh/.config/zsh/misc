@@ -54,7 +54,15 @@ function p() {
 # Competitive Programming
 #
 function cr() {
-    g++-12 --std=c++17 -O3 main.cpp && ./a.out
+    g++ --std=c++17 -O3 main.cpp && ./a.out
+}
+
+function crr {
+    g++-12 --std=c++17 -O3 $1 && ./a.out
+}
+
+function crc {
+    g++-12 --std=c++17 -O3 $1
 }
 
 function crt() {
@@ -62,7 +70,7 @@ function crt() {
 }
 
 function kt() {
-    mkdir $1 && cd $1 && touch main.cpp && e main.cpp
+    mkdir $1 && cd $1 && touch main.cpp && nvim main.cpp
 }
 
 function ktp() {
@@ -73,7 +81,9 @@ function pr() {
     python3 main.py
 }
 
-# PDF stuff
+# ---------- PDF stuff
+
+# PDF layout
 function ppr() {
     local target=$(pwd)/$(fd -e "pdf" | fzf)
     local basename=$(basename $target .pdf)
@@ -83,9 +93,15 @@ function ppr() {
     if [ -e $output_loc ]; then
         echo "Error - File already exists"
     else
-        pdfjam --nup $1 --a4paper "$target" -o $output_loc
+        pdfjam --nup $1 --a4paper "$target" --landscape -o $output_loc
         echo "Done"
     fi
+}
+
+# Count total page count in a folder
+function countpages() {
+    find . -xdev -type f -name "*.pdf" -exec pdfinfo "{}" ";" | \
+        awk '/^Pages:/ {n += $2} END {print n}'
 }
 
 # enable navi
