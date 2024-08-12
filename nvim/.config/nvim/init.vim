@@ -73,8 +73,13 @@ set wrap linebreak
 set breakindent
 set autoindent
 
+set mouse=
+
 " Make .pl be recognized as Prolog
 autocmd BufNewFile,BufRead *.pl set ft=prolog
+
+" Make .frag be recognized as GLSL
+autocmd BufNewFile,BufRead *.frag set syntax=glsl
 
 " 2 spaces for latex
 autocmd Filetype tex setlocal tabstop=2 softtabstop=2 shiftwidth=2
@@ -122,11 +127,14 @@ set background=light
 " ------------------------------------------------------------------ vim_vimtex
 
 let g:vimtex_view_method = 'skim'
+let g:vimtex_compiler_method = 'latexmk'
 
 let g:vimtex_quickfix_ignore_filters = [
     \ 'badness 10000',
     \ 'Snakes have been superseded by decorations',
     \]
+
+let g:Tex_MultipleCompileFormats='pdf'
 
 " ------------------------------------------------------------------ vim_pandoc
 
@@ -141,8 +149,7 @@ let g:pandoc#spell#enabled = 0
 " to allow ultisnips triggers to function properly
 " map! <C-h> <Nop>
 
-" anaconda python path
-let g:python3_host_prog='/Users/weiseng/opt/anaconda3/bin/python'
+let g:python3_host_prog='/opt/homebrew/bin/python3'
 
 let g:UltiSnipsSnippetsDir = '$DOTS/nvim/.config/nvim/ultisnips'
 
@@ -156,6 +163,7 @@ let g:UltiSnipsEditSplit           = 'vertical'
 nnoremap <Space> <Nop>
 let mapleader = " "
 nnoremap <leader>ev :tabedit $MYVIMRC<CR>
+nnoremap <leader>en :tabedit $NOTES_CONFIG<CR>
 nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>gw :%s/\s\+$//g<CR>   " Get rid of trailing whitespace
 nnoremap <leader>ga :%y+<CR> " Get all lines (copy)

@@ -1,4 +1,4 @@
-local capabilities = require("cmp_nvim_lsp").update_capabilities(
+local capabilities = require("cmp_nvim_lsp").default_capabilities(
 vim.lsp.protocol.make_client_capabilities()
 )
 
@@ -56,7 +56,7 @@ nvim_lsp.hls.setup({
 })
 
 -- lua lsp
-nvim_lsp.sumneko_lua.setup {
+nvim_lsp.lua_ls.setup {
   settings = {
     capabilities = capabilities,
     settings = {
